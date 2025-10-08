@@ -604,7 +604,7 @@ body {
     color: var(--primary-color);
 }
 
-.workshop-title, .drone-title {
+.workshop-title, .drone-title, .video-title {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 2rem;
@@ -642,6 +642,37 @@ body {
 
 .gallery-item:hover img {
     transform: scale(1.1);
+}
+
+/* Video Container Styling */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 16/9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+    transform: translateY(-5px);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
 }
 
 /* Workshop and Drone Slideshow within Gallery Item */
