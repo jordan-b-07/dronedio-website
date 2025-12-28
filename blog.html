@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drone Dio Blog - UOW Drone Team</title>
+    <title>Drone Dio Blog | Latest Updates & Drone Technology News - SUAS 2025</title>
+    <meta name="description" content="Stay updated with Drone Dio's latest news, achievements, and drone innovations. Read about our SUAS 2025 preparation, workshops, and technical insights from our team.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Drone Dio blog, SUAS 2025 updates, drone technology news, autonomous systems blog, UOW drone team blog, drone engineering updates">
+    <link rel="canonical" href="https://www.dronedio.com.au/blog.html">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="search-index.js"></script>
     <script src="script.js" defer></script>
+    <script src="search.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -18,7 +24,6 @@
             <li><a href="blog.html">Blogs</a></li>
             <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#team">Executives</a></li>
-            <li><a href="index.html#events">Events</a></li>
             <li><a href="index.html#gallery">Gallery</a></li>
             <li><a href="index.html#sponsors">Sponsors</a></li>
             <li><a href="index.html#contact">Contact</a></li>
@@ -39,16 +44,40 @@
         <div class="blog-categories">
             <h2 class="category-title">Preparing for SUAS 2025</h2>
             <div class="blog-grid">
-                <article class="blog-post">
+                <article class="blog-post" data-post="deomx1">
+                    <img src="images/deomx1_iso.png" alt="DeomX1 3D Model Isometric View">
+                    <div class="post-content">
+                        <h2>Introducing DeomX1: Our Custom Autonomous Quadcopter</h2>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> May 4, 2025</span>
+                            <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                        </div>
+                        <p>DeomX1 is a fully autonomous quadcopter developed by Drone Dio for the SUAS 2025 competition. The system is designed to perform complex aerial missions with high reliability, precision, and autonomy...</p>
+                        <button class="read-more" onclick="openBlogPost('deomx1')">Read More</button>
+                    </div>
+                </article>
+                <article class="blog-post" data-post="suas-photo-journey">
+                    <img src="images/photo_blog_1.jpg" alt="SUAS Preparation Photo Journey">
+                    <div class="post-content">
+                        <h2>A Photo Journey Through Our SUAS 2025 Preparation</h2>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> April 20, 2025</span>
+                            <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                        </div>
+                        <p>Join us on a visual journey through our SUAS 2025 preparation, from power distribution testing to sensor calibration...</p>
+                        <button class="read-more" onclick="openBlogPost('suas-photo-journey')">Read More</button>
+                    </div>
+                </article>
+                <article class="blog-post" data-post="suas-prep">
                     <img src="images/front.JPG" alt="SUAS Competition Preparation">
                     <div class="post-content">
                         <h2>Preparing for SUAS 2025</h2>
                         <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="fas fa-calendar"></i> March 15, 2025</span>
                             <span><i class="fas fa-user"></i> Drone Dio Team</span>
                         </div>
                         <p>As we gear up for the SUAS Competition 2025, our team is working tirelessly on developing autonomous capabilities and improving our drone's performance...</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <button class="read-more" onclick="openBlogPost('suas-prep')">Read More</button>
                     </div>
                 </article>
             </div>
@@ -57,93 +86,85 @@
         <div class="blog-categories">
             <h2 class="category-title">Events and Highlights</h2>
             <div class="blog-grid">
-                <article class="blog-post">
-                    <img src="images/11.jpeg" alt="Workshop Success">
+                <article class="blog-post" data-post="workshop-highlights">
+                    <img src="images/ws_advanced_1.jpg" alt="Advanced Workshop Success">
                     <div class="post-content">
-                        <h2>Latest Workshop Highlights</h2>
+                        <h2>Highlights from our Advanced Workshop</h2>
                         <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="fas fa-calendar"></i> April 16, 2025</span>
                             <span><i class="fas fa-user"></i> Drone Dio Team</span>
                         </div>
-                        <p>Our recent workshop brought together students from various disciplines to learn about drone technology and hands-on building experience...</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <p>Our advanced workshop brought together drone enthusiasts and professionals for an intensive day of learning and hands-on experience...</p>
+                        <button class="read-more" onclick="openBlogPost('workshop-highlights')">Read More</button>
                     </div>
                 </article>
-                <article class="blog-post">
-                    <img src="images/02.jpeg" alt="Team Updates">
+                <article class="blog-post" data-post="hands-on-workshop">
+                    <img src="images/03.jpeg" alt="First Hands-on Workshop">
                     <div class="post-content">
-                        <h2>Meet Our New Team Members</h2>
+                        <h2>Highlights from WS 2 - Our First Hands-on Workshop</h2>
                         <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+                            <span><i class="fas fa-calendar"></i> March 25, 2025</span>
                             <span><i class="fas fa-user"></i> Drone Dio Team</span>
                         </div>
-                        <p>We're excited to welcome new members to our team! Learn about their backgrounds and the fresh perspectives they bring to Drone Dio...</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <p>Our first hands-on workshop was a resounding success, bringing together 45 participants for an engaging day of drone flying and learning...</p>
+                        <button class="read-more" onclick="openBlogPost('hands-on-workshop')">Read More</button>
+                    </div>
+                </article>
+                <article class="blog-post" data-post="new-members">
+                    <img src="images/ws1_1.jpeg" alt="Drone Dio Workshop Success">
+                    <div class="post-content">
+                        <h2>Drone Dio's Opening Workshop Success</h2>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> December 28, 2024</span>
+                            <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                        </div>
+                        <p>🌟 Drone Dio Workshop: A Resounding Success! 🚀 Join us as we look back at our first workshop, where innovation met education...</p>
+                        <button class="read-more" onclick="openBlogPost('new-members')">Read More</button>
                     </div>
                 </article>
             </div>
         </div>
 
+        <!-- Tutorials and Technology section temporarily commented out
         <div class="blog-categories">
             <h2 class="category-title">Tutorials and Technology</h2>
             <div class="blog-grid">
-                <article class="blog-post">
+                <article class="blog-post" data-post="flight-controllers">
                     <img src="images/01.jpeg" alt="Drone Technology">
                     <div class="post-content">
                         <h2>Understanding Drone Flight Controllers</h2>
                         <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> March 1, 2024</span>
+                            <span><i class="fas fa-calendar"></i> March 1, 2025</span>
                             <span><i class="fas fa-user"></i> Drone Dio Team</span>
                         </div>
                         <p>A comprehensive guide to understanding flight controllers, their components, and how they work together to keep drones airborne...</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <button class="read-more" onclick="openBlogPost('flight-controllers')">Read More</button>
                     </div>
                 </article>
-                <article class="blog-post">
+                <article class="blog-post" data-post="autonomous-flight">
                     <img src="images/12.jpeg" alt="Drone Programming">
                     <div class="post-content">
                         <h2>Programming Autonomous Flight Paths</h2>
                         <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> February 25, 2024</span>
+                            <span><i class="fas fa-calendar"></i> February 25, 2025</span>
                             <span><i class="fas fa-user"></i> Drone Dio Team</span>
                         </div>
                         <p>Learn how to program autonomous flight paths for your drone using popular software and programming languages...</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <button class="read-more" onclick="openBlogPost('autonomous-flight')">Read More</button>
                     </div>
                 </article>
             </div>
         </div>
-
-        <div class="blog-categories">
-            <h2 class="category-title">Industry and News</h2>
-            <div class="blog-grid">
-                <article class="blog-post">
-                    <img src="images/13.jpeg" alt="Drone Industry">
-                    <div class="post-content">
-                        <h2>Latest Developments in Drone Regulations</h2>
-                        <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> February 20, 2024</span>
-                            <span><i class="fas fa-user"></i> Drone Dio Team</span>
-                        </div>
-                        <p>Stay informed about the latest changes in drone regulations and how they might affect your flying experience...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
-                <article class="blog-post">
-                    <img src="images/14.jpeg" alt="Drone Applications">
-                    <div class="post-content">
-                        <h2>Emerging Applications for Drone Technology</h2>
-                        <div class="post-meta">
-                            <span><i class="fas fa-calendar"></i> February 15, 2024</span>
-                            <span><i class="fas fa-user"></i> Drone Dio Team</span>
-                        </div>
-                        <p>Explore the innovative ways drones are being used across various industries, from agriculture to disaster response...</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
-            </div>
-        </div>
+        -->
     </section>
+
+    <!-- Blog Post Modal -->
+    <div id="blogModal" class="blog-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeBlogPost()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -157,7 +178,6 @@
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#team">Executives</a></li>
-                    <li><a href="index.html#events">Events</a></li>
                 </ul>
             </div>
         </div>
@@ -165,5 +185,247 @@
             <p>&copy; 2025 Drone Dio. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Blog post content
+        const blogPosts = {
+            'deomx1': {
+                title: 'Introducing DeomX1: Our Custom Autonomous Quadcopter',
+                date: 'May 4, 2025',
+                author: 'Drone Dio Team',
+                content: `
+                    <h2>Introducing DeomX1: Our Custom Autonomous Quadcopter</h2>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> May 4, 2025</span>
+                        <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                    </div>
+                    <div class="post-body">
+                        <img src="images/deomx1_iso.png" alt="DeomX1 3D Model Isometric View">
+                        <p>DeomX1 is a fully autonomous quadcopter developed by Drone Dio for the SUAS 2025 competition. The system is designed to perform complex aerial missions with high reliability, precision, and autonomy. With a strong focus on waypoint navigation, real-time object detection, and payload delivery, DeomX1 is engineered for full mission compliance using a modular, field-adaptable architecture.</p>
+                        
+                        <img src="images/deomx1_side.png" alt="DeomX1 3D Model Side View">
+                        <p>At the heart of DeomX1 lies the NVIDIA Jetson Orin 16GB, which executes YOLOv5-based object detection pipelines in real-time. The Orin coordinates directly with the SpeedyBee F405 V4 flight controller, ensuring smooth integration between high-level autonomy and low-level control logic.</p>
+                        
+                        <p>The aircraft features a 3D-printed modular payload system, capable of accurate beacon drops with minimal mechanical complexity. A lightweight carbon fibre frame was chosen for its rigidity, weight efficiency, and structural integrity. Communication is achieved through a secure 4G LTE VPN link, allowing real-time video and telemetry streaming to the ground control station.</p>
+                        
+                        <img src="images/deomx1_real.jpg" alt="DeomX1 Real Drone">
+                        <h3>Tested and Proven</h3>
+                        <p>DeomX1 has undergone extensive testing across three levels: component validation, subsystem integration, and full mission simulation. It has demonstrated consistent performance across waypoint execution, object detection, and controlled payload deployment — all within SUAS specification limits.</p>
+                        
+                        <p>This system represents Drone Dio's commitment to innovation, safety, and mission-readiness.</p>
+                    </div>
+                `
+            },
+            'suas-photo-journey': {
+                title: 'A Photo Journey Through Our SUAS 2025 Preparation',
+                date: 'April 20, 2025',
+                author: 'Drone Dio Team',
+                content: `
+                    <h2>A Photo Journey Through Our SUAS 2025 Preparation</h2>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> April 20, 2025</span>
+                        <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                    </div>
+                    <div class="post-body">
+                        <p>Welcome to our visual documentation of the SUAS 2025 preparation journey! Through these photographs, we'll take you behind the scenes of our technical development process, showcasing the dedication and expertise of our team members.</p>
+                        
+                        <img src="images/photo_blog_1.jpg" alt="Power Distribution Board Testing">
+                        <p>Our journey begins with critical power system testing. Here, we're rigorously testing our Power Distribution Board (PDB) alongside our new motor and ESC combinations. This phase is crucial for ensuring optimal power delivery and motor performance throughout the mission.</p>
+                        
+                        <img src="images/photo_blog_2.jpg" alt="Frame Manufacturing">
+                        <p>Moving to the UOW Smart building workshop, our team is manufacturing the custom frame for our drone. This facility provides us with the necessary tools and space to create precise, lightweight components that meet our exacting specifications.</p>
+                        
+                        <img src="images/photo_blog_3.jpg" alt="Object Detection Training">
+                        <p>In our software development lab, team members are hard at work training our object detection and classification models. This crucial step ensures our drone can accurately identify and interact with mission-critical objects during the competition.</p>
+                        
+                        <img src="images/photo_blog_4.jpg" alt="Electronics Assembly">
+                        <p>Our electronics and telecommunications specialist demonstrates their expertise in precise soldering work. These delicate operations are essential for creating reliable electrical connections that will withstand the rigors of flight.</p>
+                        
+                        <img src="images/photo_blog_5.jpg" alt="Payload System Integration">
+                        <p>The integration phase shows our team carefully installing the payload delivery system and battery into the drone. This step requires careful attention to weight distribution and structural integrity to ensure optimal flight performance.</p>
+                        
+                        <img src="images/photo_blog_6.jpg" alt="Sensor Calibration">
+                        <p>Finally, we see the critical process of sensor calibration. This meticulous work ensures that our drone's various sensors are perfectly aligned and calibrated, providing accurate data for navigation and control systems.</p>
+                        
+                        <p>Each of these steps represents a crucial milestone in our journey toward SUAS 2025. Through careful planning, technical expertise, and dedicated teamwork, we're building a drone that we believe will excel in the competition. Stay tuned for more updates as we continue our preparation!</p>
+                    </div>
+                `
+            },
+            'suas-prep': {
+                title: 'Preparing for SUAS 2025',
+                date: 'March 15, 2025',
+                author: 'Drone Dio Team',
+                content: `
+                    <h2>Preparing for SUAS 2025</h2>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> March 15, 2025</span>
+                        <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                    </div>
+                    <div class="post-body">
+                        <img src="images/front.JPG" alt="SUAS Competition Preparation">
+                        <p>As we gear up for the SUAS Competition 2025, our team is working tirelessly on developing autonomous capabilities and improving our drone's performance. Our focus areas include:</p>
+                        <ul>
+                            <li>Advanced flight control systems</li>
+                            <li>Object detection and recognition</li>
+                            <li>Payload delivery mechanisms</li>
+                            <li>Autonomous navigation algorithms</li>
+                        </ul>
+                        <p>Stay tuned for more updates as we progress towards the competition!</p>
+                    </div>
+                `
+            },
+            'workshop-highlights': {
+                title: 'Highlights from our Advanced Workshop',
+                date: 'April 16, 2025',
+                author: 'Drone Dio Team',
+                content: `
+                    <h2>Highlights from our Advanced Workshop</h2>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> April 16, 2025</span>
+                        <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                    </div>
+                    <div class="post-body">
+                        <img src="images/ws_advanced_1.jpg" alt="Advanced Workshop Session">
+                        <p>Our Advanced Drone Workshop on April 15, 2025, marked a significant milestone in Drone Dio's journey. The event was more than just a technical workshop – it was a platform for vision-building and community engagement. We introduced participants to the SUAS International Competition and shared our mission of bridging the gap between academic research and industry applications.</p>
+                        
+                        <img src="images/ws_advanced_2.jpg" alt="Hands-on Training Session">
+                        <p>The workshop featured comprehensive technical sessions, including detailed SpeedyBee flight controller calibration tutorials and advanced object detection implementation using RoboFlow and YOLOv5. Participants gained hands-on experience with cutting-edge UAV technology and learned practical skills that are directly applicable in the field.</p>
+                        
+                        <img src="images/ws_advanced_3.jpg" alt="Workshop Participants">
+                        <p>We also showcased our newly launched official website, demonstrating how digital platforms can enhance team collaboration and project management. The event was characterized by active participation, insightful discussions, and a shared enthusiasm for advancing drone technology.</p>
+                        
+                        <p>The success of this workshop reflects our commitment to knowledge sharing and community building in the drone technology space. We're grateful to all participants who contributed to making this event a memorable experience and look forward to organizing more such engaging sessions in the future.</p>
+                    </div>
+                `
+            },
+            'hands-on-workshop': {
+                title: 'Highlights from WS 2 - Our First Hands-on Workshop',
+                date: 'March 25, 2025',
+                author: 'Drone Dio Team',
+                content: `
+                    <h2>Highlights from WS 2 - Our First Hands-on Workshop</h2>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> March 25, 2025</span>
+                        <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                    </div>
+                    <div class="post-body">
+                        <img src="images/03.jpeg" alt="Workshop Participants">
+                        <p>Our first hands-on workshop was an incredible success, bringing together 45 enthusiastic participants for an engaging four-hour session. The event was designed to provide a comprehensive introduction to drone technology, combining theoretical knowledge with practical experience.</p>
+                        
+                        <img src="images/15.jpeg" alt="Workshop Activities">
+                        <p>The workshop featured a special guest lecture by Dr. Narmilan Amarasingam, who shared valuable insights about drone applications in agriculture. His expertise provided participants with a deeper understanding of how drone technology is revolutionizing farming practices and agricultural management.</p>
+                        
+                        <p>One of the highlights of the day was the hands-on flying session, where many participants experienced drone piloting for the first time. Under the guidance of our experienced team members, they learned basic flight controls and safety protocols, gaining confidence with each successful maneuver.</p>
+                        
+                        <img src="images/11.jpeg" alt="Workshop Fun Activities">
+                        <p>The event was made even more enjoyable with fun games and interactive activities, where participants had the chance to win exciting prizes. A delicious pizza lunch provided the perfect opportunity for networking and sharing experiences among participants.</p>
+                        
+                        <p>We extend our sincere gratitude to Engineers Australia for their support and to Dr. Narmilan Amarasingam for sharing his expertise. The success of this workshop has inspired us to organize more such events, continuing our mission to make drone technology more accessible to everyone.</p>
+                    </div>
+                `
+            },
+            'new-members': {
+                title: "Drone Dio's Opening Workshop Success",
+                date: 'December 28, 2024',
+                author: 'Drone Dio Team',
+                content: `
+                    <h2>Drone Dio's Opening Workshop Success</h2>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> December 28, 2024</span>
+                        <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                    </div>
+                    <div class="post-body">
+                        <p>🌟 Drone Dio Workshop: A Resounding Success! 🚀</p>
+                        
+                        <img src="images/ws1_1.jpeg" alt="Drone Dio Workshop Session">
+                        <p>The Drone Dio team recently hosted a phenomenal workshop that showcased innovation, collaboration, and knowledge-sharing. This milestone event, held just one month after our club's launch, exceeded all expectations with over 30 enthusiastic attendees joining us for an engaging day of drone technology exploration.</p>
+                        
+                        <img src="images/ws1_2.jpeg" alt="Interactive Workshop Activities">
+                        <p>The workshop featured a dynamic blend of theoretical knowledge and hands-on experience. We kicked off with an exciting Kahoot quiz that tested participants' knowledge of drone basics, creating a fun and competitive atmosphere while reinforcing key concepts.</p>
+                        
+                        <p>One of the highlights was our interactive payload delivery mission planning activity. Using Google Earth, participants had the opportunity to design and plan drone missions for remote area deliveries. This practical exercise helped them understand the real-world challenges and considerations in drone mission planning.</p>
+                        
+                        <p>The workshop culminated in an exciting hands-on session where participants got to experience drone flight simulation firsthand. Using MATLAB, they were able to run flight path simulations and control virtual drones, giving them valuable insights into drone control systems and autonomous flight programming.</p>
+                        
+                        <p>We thank our participants and the incredible team that made this workshop a success. Together, we're shaping the future of drone technology! 🌍✨</p>
+                    </div>
+                `
+            },
+            /* Tutorials and Technology posts temporarily commented out
+            'flight-controllers': {
+                title: 'Understanding Drone Flight Controllers',
+                date: 'March 1, 2025',
+                author: 'Drone Dio Team',
+                content: `
+                    <h2>Understanding Drone Flight Controllers</h2>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> March 1, 2025</span>
+                        <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                    </div>
+                    <div class="post-body">
+                        <img src="images/01.jpeg" alt="Drone Technology">
+                        <p>A flight controller is the brain of any drone. It processes inputs from various sensors and adjusts motor speeds to maintain stability and execute commands.</p>
+                        <p>Key components include:</p>
+                        <ul>
+                            <li>IMU (Inertial Measurement Unit)</li>
+                            <li>Gyroscope and Accelerometer</li>
+                            <li>Barometer</li>
+                            <li>GPS Module</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'autonomous-flight': {
+                title: 'Programming Autonomous Flight Paths',
+                date: 'February 25, 2025',
+                author: 'Drone Dio Team',
+                content: `
+                    <h2>Programming Autonomous Flight Paths</h2>
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar"></i> February 25, 2025</span>
+                        <span><i class="fas fa-user"></i> Drone Dio Team</span>
+                    </div>
+                    <div class="post-body">
+                        <img src="images/12.jpeg" alt="Drone Programming">
+                        <p>Programming autonomous flight paths involves creating a series of waypoints and behaviors that your drone will follow without manual intervention.</p>
+                        <p>Key aspects include:</p>
+                        <ul>
+                            <li>Waypoint navigation</li>
+                            <li>Obstacle avoidance</li>
+                            <li>Path optimization</li>
+                            <li>Emergency procedures</li>
+                        </ul>
+                    </div>
+                `
+            },
+            */
+        };
+
+        function openBlogPost(postId) {
+            const modal = document.getElementById('blogModal');
+            const modalContent = document.getElementById('modalContent');
+            const post = blogPosts[postId];
+            
+            if (post) {
+                modalContent.innerHTML = post.content;
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeBlogPost() {
+            const modal = document.getElementById('blogModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('blogModal');
+            if (event.target == modal) {
+                closeBlogPost();
+            }
+        }
+    </script>
 </body>
 </html> 
